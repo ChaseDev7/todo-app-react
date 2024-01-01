@@ -11,7 +11,7 @@ function App() {
     <>
       <Header />
       <Sidebar todoListData={todoData} />
-      <Main />
+      <Main todoListData={todoData} />
     </>
   )
 }

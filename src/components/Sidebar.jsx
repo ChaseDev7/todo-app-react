@@ -12,8 +12,8 @@ export default function Sidebar(props) {
 
   return (
     <div className="sidebar">
-      <h4>Todo List</h4>
-      <ul>
+      <h3>Todo List - Groups</h3>
+      <ul className="todo-list-container">
         {todoList}
       </ul>
     </div>

@@ -1,8 +1,8 @@
 export default function TodoList(props) {
   return (
-    <div className="todo-list-container">
+    <div className="list-item-container">
       <li key={props.todoData.id}>{props.todoData.title}</li>
-      <div>{props.todoData.todos.length}</div>
+      <div className="list-item-length">{props.todoData.todos.length}</div>
     </div>
   )
 }
