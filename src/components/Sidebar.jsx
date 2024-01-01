@@ -1,13 +1,21 @@
-export default function Sidebar() {
+import TodoList from "./TodoList"
 
-  const todos = ["play games", "code", "watch movies", "listen to podcasts", "chill"]
+export default function Sidebar(props) {
 
-  const todoList = todos.map(todo => todo)
+  // Update the code so that it isn't creating Container div for every LI (in the TodoList jsx file).
+  const todoList = props.todoListData.map(todo => {
+    return <TodoList 
+      key={todo.id}
+      todoData={todo}
+    />
+  })
 
   return (
     <div className="sidebar">
       <h4>Todo List</h4>
-      <p>{todoList}</p>
+      <ul>
+        {todoList}
+      </ul>
     </div>
   )
 }
