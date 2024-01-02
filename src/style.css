@@ -65,15 +65,21 @@ body {
   top: 50px;
   right: 0;
   bottom: 0;
-  padding-left: 30px;
+  padding: 0 30px;
+}
+
+.todo-list-title {
+  margin-bottom: 0;
 }
 
 .todo-list-container {
+  margin: 10px 0;
   list-style-type: none;
-  padding: 0;
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
   width: 80%;
+  border-top: 1px solid lightgray;
 }
 
 .list-item-container {
@@ -89,8 +95,7 @@ body {
 }
 
 .list-item-container:hover {
-  background-color: rgb(99, 156, 255);
-  color: white;
+  background-color: rgb(214, 210, 210);
 }
 
 li {
@@ -105,3 +110,12 @@ li {
   font-size: 14px;
   font-weight: bold;
 }
+
+.main-todo-list-title {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+/* .todo {
+
+} */
