@@ -68,6 +68,12 @@ body {
   padding: 0 30px;
 }
 
+.todos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .todo-list-title {
   margin-bottom: 0;
 }
@@ -104,10 +110,10 @@ li {
 
 .list-item-length {
   border-radius: 50%;
-  padding: 2px 8px;
+  padding: 4px 10px;
   background-color: rgb(99, 156, 255);
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -116,6 +122,30 @@ li {
   padding-bottom: 10px;
 }
 
-/* .todo {
+.todo {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  transition: 0.8s;
+  cursor: pointer
+}
 
-} */
+.todo:hover {
+  border-radius: 10px;
+  background-color: rgb(99, 156, 255);
+  color: white;
+}
+
+@media (max-width: 550px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+    left: 0;
+  }
+}

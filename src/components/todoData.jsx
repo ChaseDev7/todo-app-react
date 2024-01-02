@@ -16,13 +16,13 @@ export default [
       },
       {
         id: 3,
-        todoTitle: "Use background image",
+        todoTitle: "Update header",
         description: "",
         date: ""
       },
       {
         id: 4,
-        todoTitle: "Use background image",
+        todoTitle: "Push code onto Github",
         description: "",
         date: ""
       }
